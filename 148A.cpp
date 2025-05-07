@@ -3,8 +3,12 @@ using namespace std;
 
 int main(){
     int k,l,m,n;
-    long d;
+    long long d;
     cin >> k>>l>>m>>n >> d;
-    int ans;
+    long long ans = 0;
+    for(long long i = 1; i <= d; i++){
+        if(i%k==0 || i%l == 0 || i%m==0 || i%n==0) ans++;
+    }
+    cout << ans;
     
 }
